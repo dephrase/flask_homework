@@ -1,0 +1,21 @@
+h1 {
+    color: #94d0cc;
+    background-color: #EEC4C4;
+    padding: 20px;
+}
+
+.orders {
+    display: flex;
+    flex-direction: row;
+    background-color: #f29191;
+}
+
+.individual_order {
+    padding: 20px;
+    color: #d1d9d9
+}
+
+body {
+    background-color: #EEC4C4;
+    
+}

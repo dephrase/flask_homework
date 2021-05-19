@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>{title} - Book Orders</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Book Orders</h1>
+    <div class=orders>
+    {% for order in orders %}
+    <div class="individual_order"> 
+        <p>
+            <b>{{order.customer_name}} </b>:  <br>Title: {{order.book_title}}, <br> Quantity: {{order.quantity}} <br> Order Date: {{order.order_date}} <br> Order Details: <a href="orders/{{orders.index(order)}}">{{order.book_title}}</a>
+        </p>
+    </div>
+    
+    {% endfor %}
+    </div>
+</body>
+</html>
